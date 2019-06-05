@@ -13,6 +13,10 @@ $(document).ready(function() {
 // Function to start game, in the function reset score to 0 and set target score to 19 - 120
 
 // have crystal set new random value to 1 -20
+var mybutton1 =    Math.floor(Math.random() * 20 +1)
+var mybutton2 =    Math.floor(Math.random() * 20 +1)
+var mybutton3 =    Math.floor(Math.random() * 20 +1)
+var mybutton4 =    Math.floor(Math.random() * 20 +1)
 
 // connect to HTML
 
