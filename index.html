@@ -25,6 +25,8 @@
             <div class="col-lg-5">
                 <div class="card">
                     <h3 class="card-header">Number to Guess</h3>
+                    <h3 id="specialNumber"></h3>
+
                     <div class="card-body">
                         <span id="compguess"></span>
                     </div>
@@ -36,13 +38,13 @@
                 <div class="card">
                     <h3 class="card-header">Pick a Crystal</h3>
                     <div class="card-body">
-                        <img src="Assets/images/Gem1_1_125x125.jpg" class="myButton1" type="submit" value="">
+                        <img src="Assets/images/Gem1_1_125x125.jpg" id="gem1" class="myButton1" type="submit" value="">
 
-                        <img src="Assets/images/Gem2_125x125.jpg" class="myButton2" type="submit" value="">
+                        <img src="Assets/images/Gem2_125x125.jpg" id="gem2" class="myButton1" type="submit" value="">
 
-                        <img src="Assets/images/gem3_125x125.jpg" class="myButton3" type="submit" value="">
+                        <img src="Assets/images/gem3_125x125.jpg" id="gem3" class="myButton1" type="submit" value="">
 
-                        <img src="Assets/images/gem4_125x125.jpg" class="myButton4" type="submit" value="">
+                        <img src="Assets/images/gem4_125x125.jpg" id="gem4" class="myButton1" type="submit" value="">
 
                     </div>
 
@@ -54,9 +56,10 @@
             <div class="col-lg-3">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="usertotal">User Guess Total</h3>
-                        <h3 class="wins">Wins</h3>
-                        <h3 class="lose">Lose</h3>
+                        <h3 class="usertotal">Total Score: <span id="totalScore"></span></h3>
+                        
+                        <h3 class="wins">Wins<span id="wins"></span></h3>
+                        <h3 class="lose">Lose<span id="lose"></span></h3>
 
                     </div>
                 </div>
