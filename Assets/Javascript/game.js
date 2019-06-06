@@ -35,7 +35,7 @@ var lose = 0;
     // Function to start game, in the function reset score to 0 and set target score to 19 - 120
     function newGame(){
         newNumber();
-        totalscore = 0;
+        totalScore = 0;
         $("#specialNumber").text(specialNumber);
         $("#totalScore").text(totalScore);
         $("#gem1").attr("dataGemValue", clear);
