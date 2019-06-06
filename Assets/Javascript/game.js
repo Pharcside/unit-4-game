@@ -18,7 +18,7 @@ $(document).ready(function () {
     // Function where computer picks random number.
     function newNumber() {
         // computers random pick
-        specialNumber = Math.floor((Math.randon() * 120) + 19);
+        specialNumber = Math.floor((Math.random() * 120) + 19);
 
         clear = Math.floor(Math.random() * 12 + 1);
         green = Math.floor(Math.random() * 12 + 1);
