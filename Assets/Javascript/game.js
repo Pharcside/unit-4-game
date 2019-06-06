@@ -8,7 +8,7 @@ var clear;
 var green;
 var red;
 var yellow;
-var win =0;
+var win = 0;
 var lose = 0;
 
 
@@ -52,7 +52,7 @@ var lose = 0;
 
     // Function for when you win the game
 function youwin(){
-    wins++
+    win++
     $("#wins").text(win);
     newGame();
 
@@ -77,7 +77,7 @@ function youLose(){
             youwin();
             
         }
-        else if (totalScore < specialNumber){
+        else if (totalScore > specialNumber){
             youLose();
         }
     }
