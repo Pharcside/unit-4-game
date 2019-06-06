@@ -67,7 +67,7 @@ function youLose(){
 
   //on click event so when gems are clicked scores and wins go up
     $(".myButton1").on("click", function () {
-        var gemValue = $(this).attr(dataGemValue);
+        var gemValue = $(this).attr("dataGemValue");
         
         gemValue =parseInt(gemValue);
         totalScore = totalScore + gemValue;
