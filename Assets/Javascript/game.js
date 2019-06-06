@@ -1,3 +1,6 @@
+
+$(document).ready(function() {
+
 // global variables
 var specialNumber;
 var totalScore = 0;
@@ -13,7 +16,7 @@ var lose = 0;
 
 
 
-$(document).ready(function () {
+
 
     // Function where computer picks random number.
     function newNumber() {
@@ -42,7 +45,7 @@ $(document).ready(function () {
 
 
     }
- 
+ newGame();
 
 
  
@@ -51,20 +54,20 @@ $(document).ready(function () {
 function youwin(){
     wins++
     $("#wins").text(win);
-    totalScore = 0;
+    newGame();
 
 }
 // Function for when you lose the game
 function youLose(){
     lose++
     $("#lose").text(lose);
-    totalScore = 0;
+    newGame();
 }
 
 
   //on click event so when gems are clicked scores and wins go up
-    $("#myButton1").on("click", function () {
-        var gemValue = $(this).attr(gemValue);
+    $(".myButton1").on("click", function () {
+        var gemValue = $(this).attr(dataGemValue);
         
         gemValue =parseInt(gemValue);
         totalScore = totalScore + gemValue;
